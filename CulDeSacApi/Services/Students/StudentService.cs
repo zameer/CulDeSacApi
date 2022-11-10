@@ -10,9 +10,7 @@ namespace CulDeSacApi.Services.Students
         public StudentService(IStorageBroker storageBroker) =>
             this.storageBroker = storageBroker;
 
-        public ValueTask<Student> AddStudentAsync(Student student)
-        {
-            throw new NotImplementedException();
-        }
+        public async ValueTask<Student> AddStudentAsync(Student student) =>
+            await this.storageBroker.InsertStudentAsync(student);
     }
 }
