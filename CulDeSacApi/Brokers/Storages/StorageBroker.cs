@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CulDeSacApi.Brokers.Storages
 {
-    public class StorageBroker : EFxceptionsContext, IStorageBroker
+    public partial class StorageBroker : EFxceptionsContext, IStorageBroker
     {
         private readonly IConfiguration configuration;
 
