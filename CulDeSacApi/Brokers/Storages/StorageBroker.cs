@@ -12,7 +12,11 @@ namespace CulDeSacApi.Brokers.Storages
             this.configuration = configuration;
             this.Database.Migrate(); //this will automatically kick of db migration
         }
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            SetStudentFeeReferences(modelBuilder);
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString =

@@ -1,7 +1,7 @@
 ﻿using CulDeSacApi.Brokers.Storages;
 using CulDeSacApi.Models.Students;
 
-namespace CulDeSacApi.Services.Students
+namespace CulDeSacApi.Services.Foundations.Students
 {
     public class StudentService : IStudentService
     {
@@ -11,6 +11,6 @@ namespace CulDeSacApi.Services.Students
             this.storageBroker = storageBroker;
 
         public async ValueTask<Student> AddStudentAsync(Student student) =>
-            await this.storageBroker.InsertStudentAsync(student);
+            await storageBroker.InsertStudentAsync(student);
     }
 }

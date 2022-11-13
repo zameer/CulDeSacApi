@@ -1,6 +1,6 @@
 using CulDeSacApi.Brokers.Storages;
 using CulDeSacApi.Models.Students;
-using CulDeSacApi.Services.Students;
+using CulDeSacApi.Services.Foundations.Students;
 using Moq;
 using Tynamix.ObjectFiller;
 

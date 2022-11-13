@@ -1,6 +1,6 @@
 ﻿using CulDeSacApi.Models.Students;
 
-namespace CulDeSacApi.Services.Students
+namespace CulDeSacApi.Services.Foundations.Students
 {
     public interface IStudentService
     {
