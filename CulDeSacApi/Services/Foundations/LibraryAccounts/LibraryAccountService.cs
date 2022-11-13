@@ -10,9 +10,7 @@ namespace CulDeSacApi.Services.Foundations.LibraryAccounts
         public LibraryAccountService(IStorageBroker storageBroker) =>
             this.storageBroker = storageBroker;
 
-        public ValueTask<LibraryAccount> AddLibraryAccountAsync(LibraryAccount libraryAccount)
-        {
-            throw new NotImplementedException();
-        }
+        public ValueTask<LibraryAccount> AddLibraryAccountAsync(LibraryAccount libraryAccount) =>
+            this.storageBroker.InsertLibraryAccountAsync(libraryAccount);
     }
 }
