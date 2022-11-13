@@ -1,4 +1,5 @@
 ﻿using CulDeSacApi.Models.Fees;
+using CulDeSacApi.Models.LibraryAccounts;
 using System.Text.Json.Serialization;
 
 namespace CulDeSacApi.Models.Students
@@ -10,5 +11,7 @@ namespace CulDeSacApi.Models.Students
 
         [JsonIgnore]
         public IEnumerable<Fee> Fees { get; set; }
+
+        public LibraryAccount LibraryAccount { get; set; }
     }
 }

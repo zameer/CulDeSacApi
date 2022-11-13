@@ -16,6 +16,7 @@ namespace CulDeSacApi.Brokers.Storages
         {
             base.OnModelCreating(modelBuilder);
             SetStudentFeeReferences(modelBuilder);
+            AddLibraryAccountsReferences(modelBuilder);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
