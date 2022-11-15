@@ -5,7 +5,17 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CulDeSacApi", "CulDeSacApi\CulDeSacApi.csproj", "{23E6C11B-3893-40E7-9F4B-47406654163A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CulDecSacApi.Tests.Unit", "CulDecSacApi.Tests.Unit\CulDecSacApi.Tests.Unit.csproj", "{0056EDF9-5005-4966-9A97-458A538399BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CulDecSacApi.Tests.Unit", "CulDecSacApi.Tests.Unit\CulDecSacApi.Tests.Unit.csproj", "{0056EDF9-5005-4966-9A97-458A538399BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microsoft.Azure.ServiceBus", "Microsoft.Azure.ServiceBus", "{1B1AC550-5E39-44FE-968E-3988F836E87D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure.Messaging.ServiceBus", "Azure.Messaging.ServiceBus", "{ECACAF6C-7638-4A60-82EA-2C2FB2F4BD28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalDeSacApi", "CalDeSacApi\CalDeSacApi.csproj", "{5F434B64-8E3D-4E4C-8601-DD6B840D175F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure.Messaging.ServiceBus.Console", "Azure.Messaging.ServiceBus.Console", "{7764C81C-DE26-47C5-9F87-E1E1F0D05951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CulDeSacConsole", "CulDeSacConsole\CulDeSacConsole.csproj", "{47B5F1BB-6E2C-43DF-86C8-85396747386D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +31,23 @@ Global
 		{0056EDF9-5005-4966-9A97-458A538399BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0056EDF9-5005-4966-9A97-458A538399BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0056EDF9-5005-4966-9A97-458A538399BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F434B64-8E3D-4E4C-8601-DD6B840D175F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F434B64-8E3D-4E4C-8601-DD6B840D175F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F434B64-8E3D-4E4C-8601-DD6B840D175F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F434B64-8E3D-4E4C-8601-DD6B840D175F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B5F1BB-6E2C-43DF-86C8-85396747386D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B5F1BB-6E2C-43DF-86C8-85396747386D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B5F1BB-6E2C-43DF-86C8-85396747386D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B5F1BB-6E2C-43DF-86C8-85396747386D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23E6C11B-3893-40E7-9F4B-47406654163A} = {ECACAF6C-7638-4A60-82EA-2C2FB2F4BD28}
+		{0056EDF9-5005-4966-9A97-458A538399BC} = {ECACAF6C-7638-4A60-82EA-2C2FB2F4BD28}
+		{5F434B64-8E3D-4E4C-8601-DD6B840D175F} = {1B1AC550-5E39-44FE-968E-3988F836E87D}
+		{47B5F1BB-6E2C-43DF-86C8-85396747386D} = {7764C81C-DE26-47C5-9F87-E1E1F0D05951}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA1A2EAD-D9C1-463D-BB24-FECA346CB252}

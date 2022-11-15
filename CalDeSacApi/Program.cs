@@ -1,10 +1,7 @@
-using CulDeSacApi.Brokers.Queues;
-using CulDeSacApi.Brokers.Storages;
-using CulDeSacApi.Services.Foundations.StudentEvents;
-using CulDeSacApi.Services.Foundations.Students;
-using CulDeSacApi.Services.Orchestrations.StudentEvents;
+using CalDeSacApi.Brokers.Queues;
+using CalDeSacApi.Services.Foundations.StudentEvents;
+using CalDeSacApi.Services.Orchestrations.StudentEvents;
 using FluentAssertions.Common;
-using Microsoft.Extensions.Azure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,10 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<StorageBroker>();
+
 builder.Services.AddTransient<IQueueBroker, QueueBroker>();
-builder.Services.AddTransient<IStorageBroker, StorageBroker>();
-builder.Services.AddTransient<IStudentService, StudentService>();
 builder.Services.AddTransient<IStudentEventService, StudentEventService>();
 builder.Services.AddTransient<IStudentEventOrchestrationService, StudentEventOrchestrationService>();
 
